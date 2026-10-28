@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aditya singhal | Personal Profile</title>
+    <meta
+      name="description"
+      content="Personal profile of Aditya singhal — about, skills, and projects."
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <p class="brand">Aditya singhal</p>
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          Menu
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary">
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+          </ul>
+        </nav>
+        <button id="themeToggle" type="button">Switch to Dark Mode</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <h1>Aditya singhal</h1>
+      <p class="tagline">Aspiring AI/ML Engineer | Japanese Language Enthusiast | Driven by Innovation and continous learning
+
+      <section id="about" aria-labelledby="about-heading">
+        <h2 id="about-heading">About</h2>
+        <p>
+          Hello — I am Aditya singhal, a Enginner based in
+           Jaipur, India. I have a background in Artificial Intelligence and Machine Learning, with a strong interest in technology, innovation, and software development. I am also passionate about Japanese language and culture, continuously developing my technical and communication skills to explore global opportunities.
+          
+        </p>
+        <p>
+          I am focused on strengthening my technical skills through hands-on projects, continuous learning, and practical experience. I enjoy collaborating with teams, solving problems, and exploring opportunities that combine AI, technology, and cross-cultural communication.
+        </p>
+      </section>
+
+      <section id="skills" aria-labelledby="skills-heading">
+        <h2 id="skills-heading">Skills</h2>
+        <ul class="skills-list">
+          <li>Python and C Programming</li>
+          <li>Artificial Intelligence and Machine Learning</li>
+          <li>React.js and Front-End Development</li>
+          <li>Problem-Solving and Analytical Thinking</li>
+          <li>Japanese Language and Cross-Cultural Communication</li>
+        </ul>
+      </section>
+
+      <section id="projects" aria-labelledby="projects-heading">
+        <h2 id="projects-heading">Projects</h2>
+        <div class="project-filters">
+          <label class="project-search-label" for="project-search">
+            Search projects
+          </label>
+          <input
+            id="project-search"
+            class="project-search"
+            type="search"
+            placeholder="Search by name or technology"
+            autocomplete="off"
+          />
+          <div
+            class="tech-filters"
+            role="group"
+            aria-label="Filter by technology"
+          >
+            <button type="button" data-tech="all" aria-pressed="true">
+              All
+            </button>
+            <button type="button" data-tech="Python" aria-pressed="false">
+              Python
+            </button>
+            <button type="button" data-tech="JavaScript" aria-pressed="false">
+              JavaScript
+            </button>
+            <button type="button" data-tech="HTML" aria-pressed="false">
+              HTML
+            </button>
+            <button type="button" data-tech="CSS" aria-pressed="false">
+              CSS
+            </button>
+          </div>
+          <p
+            id="project-filter-status"
+            class="filter-status"
+            aria-live="polite"
+          ></p>
+        </div>
+        <ul class="projects-list">
+          <li
+            data-name="Basic Python Programs"
+            data-tech="Python"
+          >
+            <a href="https://github.com/adityasinghal1507/Basic-Python-code.git">
+              Basic Python Programs
+            </a>
+            <p>A collection of foundational code implementations focusing on key algorithmic logic and data structure concepts. Features optimized code for generating the Fibonacci series, calculating factorials, and working with custom data structures..</p>
+            <p class="project-tech">Python</p>
+          </li>
+          <li
+            data-name="Buggy Python Code"
+            data-tech="Python"
+          >
+            <a href="https://github.com/adityasinghal1507/Session-8-buggy-python-code-.git">
+              Buggy Python Code
+            </a>
+            <p>A collection of intentionally flawed Python scripts designed to practice, test, and master advanced debugging techniques. This project highlights systematic problem-solving skills, exception handling, and the ability to identify and resolve logical errors and edge-case failures.</p>
+            <p class="project-tech">Python</p>
+          </li>
+          <li
+            data-name="Reading list app"
+            data-tech="JavaScript, HTML, CSS"
+          >
+            <a href="https://github.com/adityasinghal1507/Reading-List-app.git">
+              Reading list app
+            </a>
+            <p>A dynamic web application designed to help users track, organize, and manage their personal reading collections. Built with a responsive interface, it allows users to log books, update reading progress, and maintain a personalized digital bookshelf with ease.</p>
+            <p class="project-tech">JavaScript, HTML, CSS</p>
+          </li>
+        </ul>
+        <p id="projects-empty" class="projects-empty" hidden>
+          No projects match your search.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Contact:
+        <a href="mailto:PLACEHOLDER.email@example.com">
+          PLACEHOLDER.email@example.com
+        </a>
+      </p>
+      <p>
+        <span id="copyright-year"></span> Aditya singhal. All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
